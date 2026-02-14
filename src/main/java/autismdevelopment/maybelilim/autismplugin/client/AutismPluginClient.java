@@ -16,7 +16,7 @@ import static namidevelopment.kiriyaga.api.NamiApi.*;
 public class AutismPluginClient implements ClientModInitializer {
 
     public static final String VERSION;
-    public static final String PLUGIN_NAME = "Autism Plugin";
+    public static final String PLUGIN_NAME = "autismplugin";
     public static final String AUTHORS = "maybelilim";
     public static final int PLUGIN_ID = 20260215;
 

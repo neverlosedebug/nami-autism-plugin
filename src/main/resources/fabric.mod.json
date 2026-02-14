@@ -3,7 +3,7 @@
   "id": "nami-autism-plugin",
   "version": "${version}",
   "name": "nami-autism-plugin",
-  "description": "autism plguin for NamiClient",
+  "description": "autism plugin for NamiClient",
   "authors": ["maybelilim"],
   "license": "MIT",
   "environment": "client",
