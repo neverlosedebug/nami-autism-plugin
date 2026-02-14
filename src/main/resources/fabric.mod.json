@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "nami-autism-plugin",
+  "version": "${version}",
+  "name": "nami-autism-plugin",
+  "description": "autism plguin for NamiClient",
+  "authors": ["maybelilim"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "autismdevelopment.maybelilim.autismplugin.client.AutismPluginClient"
+    ],
+    "main": [
+      "autismdevelopment.maybelilim.autismplugin.AutismPlugin"
+    ]
+  },
+  "mixins": [
+    "autism-plugin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
