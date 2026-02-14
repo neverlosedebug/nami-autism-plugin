@@ -10,17 +10,11 @@
   "entrypoints": {
     "client": [
       "autismdevelopment.maybelilim.autismplugin.client.AutismPluginClient"
-    ],
-    "main": [
-      "autismdevelopment.maybelilim.autismplugin.AutismPlugin"
     ]
   },
-  "mixins": [
-    "autism-plugin.mixins.json"
-  ],
   "depends": {
+    "minecraft": "${minecraft_version}",
     "fabricloader": ">=${loader_version}",
-    "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "nami-api": "*"
   }
 }
