@@ -46,7 +46,6 @@ public class ExampleFeature extends Feature {
                 "example", "test", "settings"
         );
 
-
         enabled.setShowCondition(() -> page.get() == Page.MAIN);
         color.setShowCondition(() -> page.get() == Page.MAIN);
 
