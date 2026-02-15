@@ -12,9 +12,12 @@
       "autismdevelopment.maybelilim.autismplugin.client.AutismPluginClient"
     ]
   },
+  "mixins": [
+    "autism-plugin.mixins.json"
+  ],
   "depends": {
-    "minecraft": "${minecraft_version}",
     "fabricloader": ">=${loader_version}",
-    "nami-api": "*"
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
   }
 }

@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "autismdevelopment.maybelilim.autismplugin",
+  "package": "autismdevelopment.maybelilim.autismplugin.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "MixinTitleScreen"
   ],
   "client": [
   ],
