@@ -2,10 +2,7 @@ package autismdevelopment.maybelilim.autismplugin.client;
 
 import autismdevelopment.maybelilim.autismplugin.client.impl.feature.ExampleFeature;
 import autismdevelopment.maybelilim.autismplugin.client.impl.feature.commands.DebugCommandFeature;
-import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.DebugCoordinatesFeature;
-import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.GreetingFeature;
-import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.HelloHudFeature;
-import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.WatermarkPluginFeature;
+import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.*;
 import namidevelopment.kiriyaga.api.model.plugin.Plugin;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -42,6 +39,7 @@ public class AutismPluginClient implements ClientModInitializer {
         plugin.getRegisteredFeatures().add(new HelloHudFeature());
         plugin.getRegisteredFeatures().add(new WatermarkPluginFeature());
         plugin.getRegisteredFeatures().add(new DebugCoordinatesFeature());
+        plugin.getRegisteredFeatures().add(new StatusIndicatorFeature());
 
         // COMMANDS
         plugin.getRegisteredCommands().add(new DebugCommandFeature());

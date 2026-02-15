@@ -17,7 +17,6 @@ public class MixinTitleScreen {
     @Inject(method = "render", at = @At("RETURN"))
     private void renderWatermark(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.font == null) return;
 
         String name = AutismPluginClient.PLUGIN_NAME;
         String version = AutismPluginClient.VERSION;
