@@ -1,6 +1,8 @@
 package autismdevelopment.maybelilim.autismplugin.client;
 
 import autismdevelopment.maybelilim.autismplugin.client.impl.feature.ExampleFeature;
+import autismdevelopment.maybelilim.autismplugin.client.impl.feature.commands.DebugCommandFeature;
+import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.DebugCoordinatesFeature;
 import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.GreetingFeature;
 import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.HelloHudFeature;
 import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.WatermarkPluginFeature;
@@ -39,14 +41,16 @@ public class AutismPluginClient implements ClientModInitializer {
         plugin.getRegisteredFeatures().add(new GreetingFeature());
         plugin.getRegisteredFeatures().add(new HelloHudFeature());
         plugin.getRegisteredFeatures().add(new WatermarkPluginFeature());
+        plugin.getRegisteredFeatures().add(new DebugCoordinatesFeature());
 
         // COMMANDS
+        plugin.getRegisteredCommands().add(new DebugCommandFeature());
 
         // You need to register plugin here
         PLUGIN_SERVICE.registerPlugin(plugin);
 
         // You can force enabling your client from start, config will still disable it if its not first launch
-        // Please keep it clear, dont touch some core api functionality you dont know about, dont force people to load anything they cant disable
+        // Please keep it clear, don't touch some core api functionality you don't know about, don't force people to load anything they cant disable
         //PLUGIN_SERVICE.enablePlugin(PLUGIN_ID);
 
         LOGGER.info(NAME + " " + VERSION + " has been initialized\n");
