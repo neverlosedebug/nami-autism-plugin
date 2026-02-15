@@ -8,7 +8,7 @@ import static namidevelopment.kiriyaga.api.NamiApi.*;
 public class WatermarkPluginFeature extends HudElementFeature {
 
     public WatermarkPluginFeature() {
-        super("Watermark", "Displays plugin watermark in the top-left corner.", 2, 2, 100, 9);
+        super("WatermarkPlugin", "Displays plugin watermark in the top-left corner.", 2, 2, 100, 9);
 
     }
 

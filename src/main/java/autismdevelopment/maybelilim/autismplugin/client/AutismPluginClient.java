@@ -1,6 +1,5 @@
 package autismdevelopment.maybelilim.autismplugin.client;
 
-import autismdevelopment.maybelilim.autismplugin.client.impl.command.UnbindAllCommand;
 import autismdevelopment.maybelilim.autismplugin.client.impl.feature.ExampleFeature;
 import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.GreetingFeature;
 import autismdevelopment.maybelilim.autismplugin.client.impl.hudfeature.HelloHudFeature;
@@ -42,7 +41,6 @@ public class AutismPluginClient implements ClientModInitializer {
         plugin.getRegisteredFeatures().add(new WatermarkPluginFeature());
 
         // COMMANDS
-        plugin.getRegisteredCommands().add(new UnbindAllCommand());
 
         // You need to register plugin here
         PLUGIN_SERVICE.registerPlugin(plugin);
